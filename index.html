@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Compound Interest Calculator</h1>
+    <form action="" method="get" class="calculateForm">
+        Step 1: Initial Investment
+        <br>
+            <label for="initial">Initial Investment ($)</label>
+            <input value="" type="text" id="initial" name="initial" required>
+        <br>
+        <br>
+
+        Step 2: Contribute
+        <br>
+            <label for="length">Length of Time in Years</label>
+            <input type="text" id="length" name="length" required>
+        <br>
+        <br>
+
+        Step 3: Interest Rate
+        <br>
+
+        <label for="rate">Estimated Interest Rate (%)</label>
+        <input value="" id="rate" name="rate" required>
+        <br>
+        <br>
+        Step 4: Compound It
+
+            <label for="freq">Compound Frequency</label>
+            <select name="freq" id="freq" required>
+               <option value="1">Anually</option>
+               <option value="6">Semiannually</option>
+               <option value="12">Monthly</option>
+               <option value="365">Daily</option>
+            </select>
+        <br>
+        <br>
+        </div>
+        <div class="description">
+            <button class="calculateButton" type="button">Calculate</button>
+            <button class="resetButton" type="button">Reset</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

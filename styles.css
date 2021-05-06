@@ -1,0 +1,21 @@
+h1 {
+    color: #2b2d42;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #a8dadc;
+
+body {
+    background-color: #f1faee;
+}
+
+
+
+
