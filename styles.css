@@ -16,5 +16,14 @@ form {
     background-color: #edf6f9;
 }
 
+.result {
+    padding: 15px;
+    font-family: 'Roboto', sans - serif;
+    background-color: #cb997e;
+    color: #ffe8d6;
+    margin-top: 15px;
+
+}
+
 
 

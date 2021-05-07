@@ -11,9 +11,12 @@
     <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Compound Interest Calculator</h1>
+    <div id="error"></div>
     <form action="" method="get" class="calculateForm">
     <div class="col-xs-2">
     <label for="initial"><p class="fw-bold">Step 1: Initial investment</p></label>
@@ -27,7 +30,7 @@
         </div>
         <br>
         <div class="form-group">
-        <label for="rate"><p class="fw-bold">Step 3: Interest rate</p></label>
+        <label for="rate"><p class="fw-bold">Step 3: Interest Rate</p></label>
         <input class="form-control" value="" id="rate" name="rate" required placeholder="%">
         </div>
         <br>
@@ -43,8 +46,8 @@
         <br>
         </div>
         <div class="description">
-            <button id="caclculate" class="btn-success" type="button">Calculate</button>
-            <button id="reset" class="btn-danger" type="button">Reset</button>
+            <button class="btn btn-success" type="button">Calculate</button>
+            <button class="btn btn-danger" type="button">Reset</button>
         </div>
     </div>
     </form>

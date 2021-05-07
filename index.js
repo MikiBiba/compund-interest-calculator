@@ -8,18 +8,21 @@ window.addEventListener('load', function (event) {
     const freqInput = document.getElementById('freq');
 
     resetButton.addEventListener('click', () => calculateForm.reset());
-    calculateButton.addEventListener("click", function () {
-        let initialP = parseInt(initialInput.value); 
-        let lengthT = parseInt(lengthInput.value);
-        let rateR = parseFloat(rateInput.value);
-        let freqN = parseInt(freqInput.value);
-        const amount =  initialP * Math.pow(1 + rateR / (100 * freqN), freqN * lengthT);
-        
+    calculateButton.addEventListener('click', () => {
+        const initialP = parseInt(initialInput.value);
+        const lengthT = parseInt(lengthInput.value);
+        const rateR = parseFloat(rateInput.value);
+        const freqN = parseInt(freqInput.value);
+        const amount = initialP * Math.pow(1 + rateR / (100 * freqN), freqN * lengthT);
 
-        const form = document.querySelector('form');
-        const newDiv = document.createElement('div');
-        form.append(newDiv);
-        newDiv.innerText = 'in ' + lengthT + ' years you will have ' + amount;
-        newDiv.style.padding = '15px';
+        if (isNaN(initialP) || isNaN(lengthT) || isNaN(rateR)) {
+            alert('Invalid Input, Only Numbers!')
+        } else {
+            const form = document.querySelector('form');
+            const newDiv = document.createElement('div');
+            form.append(newDiv);
+            newDiv.innerText = `In ${lengthT} years your amount will be $${amount}`;
+            newDiv.className = 'result';
+        }
     })
 });
