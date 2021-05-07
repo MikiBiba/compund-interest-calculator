@@ -1,21 +1,20 @@
 h1 {
-    color: #2b2d42;
+    color: #006d77;
     text-align: center;
 }
 
 form {
     margin: 0 auto;
-    width: 500px;
+    width: 422px;
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 4px solid #e29578;
     border-radius: 1em;
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: #a8dadc;
-
-body {
-    background-color: #f1faee;
+    background-color: #ffddd2;
 }
 
+ body {
+    background-color: #edf6f9;
+}
 
 
 

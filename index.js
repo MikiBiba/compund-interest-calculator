@@ -1,6 +1,6 @@
 window.addEventListener('load', function (event) {
-    const resetButton = document.querySelector('.resetButton');
-    const calculateButton = document.querySelector('.calculateButton');
+    const resetButton = document.querySelector('.btn-danger');
+    const calculateButton = document.querySelector('.btn-success');
     const calculateForm = document.querySelector('.calculateForm');
     const initialInput = document.getElementById('initial');
     const lengthInput = document.getElementById('length');
@@ -14,13 +14,12 @@ window.addEventListener('load', function (event) {
         let rateR = parseFloat(rateInput.value);
         let freqN = parseInt(freqInput.value);
         const amount =  initialP * Math.pow(1 + rateR / (100 * freqN), freqN * lengthT);
-        console.log(amount);
+        
 
         const form = document.querySelector('form');
         const newDiv = document.createElement('div');
         form.append(newDiv);
-        newDiv.innerText = amount;
-        newDiv.style.padding = '10px';
-        newDiv.style.border = '1px solid #081c15';        
+        newDiv.innerText = 'in ' + lengthT + ' years you will have ' + amount;
+        newDiv.style.padding = '15px';
     })
 });
